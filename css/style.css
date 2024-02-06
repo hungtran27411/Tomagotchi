@@ -1,10 +1,19 @@
-#status {
+
+@import url('https://');
+#status1 {
     width: 100%;
-    background-color: grey;
+    background-color: #ddd;
   }
-  
-  #statusBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
+ 
+  #status1{
+    width: 80%;
+    background-color: #ddd;
   }
+  #statusBar1 {
+  width: 10%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  }  
