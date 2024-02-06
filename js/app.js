@@ -25,3 +25,18 @@ function myStopFunction() {
   clearTimeout(myTimeout);
   myTimeout()
 }
+
+
+let start = document.querySelector('#start');
+let stop  = document.querySelector('#stop');
+
+start.addEventListener('click', function() {
+	let timerId = setInterval(function() {
+		console.log('!')
+	}, 1000);
+});
+
+// Stopping the timer:
+stop.addEventListener('click', function() {
+	clearInterval(timerId);
+});
