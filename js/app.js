@@ -14,29 +14,45 @@
     // }
     // setTimeout(myFunction, 10000);
 //https://www.youtube.com/watch?v=x7WJEmxNlEs&t=301
-const myTimeout = setTimeout(myGreeting, 5000);
+// const myTimeout = setTimeout(myGreeting, 5000);
 
 
-function myGreeting() {
-  document.getElementById("demo").innerHTML = "Your 5 second timer has ran out!!"
-}
+// function myGreeting() {
+//   document.getElementById("demo").innerHTML = "Your 5 second timer has ran out!!"
+// }
 
-function myStopFunction() {
-  clearTimeout(myTimeout);
-  myTimeout()
-}
+// function myStopFunction() {
+//   clearTimeout(myTimeout);
+//   myTimeout()
+// }
 
 
-let start = document.querySelector('#start');
-let stop  = document.querySelector('#stop');
+// let start = document.querySelector('#start');
+// let stop  = document.querySelector('#stop');
 
-start.addEventListener('click', function() {
-	let timerId = setInterval(function() {
-		console.log('!')
-	}, 1000);
-});
+// start.addEventListener('click', function() {
+// 	let timerId = setInterval(function() {
+// 		console.log('!')
+// 	}, 1000);
+// });
 
-// Stopping the timer:
-stop.addEventListener('click', function() {
-	clearInterval(timerId);
-});
+// // Stopping the timer:
+// stop.addEventListener('click', function() {
+// 	clearInterval(timerId);
+// });
+//The greater than or equal ( >= ) operator returns true if the left operand is greater than or equal to the right operand, and false otherwise.
+
+ // Decrease progress bar width gradually over 10 seconds
+ let animation; // Variable to store animation ID
+
+  // Function to start the progress bar animation
+  document.getElementById('startButton').addEventListener('click', () => {
+    const progressBarFill = document.getElementById('progressBar');
+    progressBarFill.style.animationPlayState = 'running'; // Start the animation
+  });
+
+  // Function to stop the progress bar animation
+  document.getElementById('stopButton').addEventListener('click', () => {
+    const progressBarFill = document.getElementById('progressBar');
+    progressBarFill.style.animationPlayState = 'paused'; // Pause the animation
+  });

@@ -1,19 +1,51 @@
+.prog-container {
+  margin-bottom: 20px;
+}
+.prog-bar1 {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+.prog-bar2 {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+.prog-bar3 {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+.bar-fill1 {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+  animation: decreaseWidth 10s linear forwards; /* CSS animation to decrease width over 10 seconds */
+}
+.bar-fill2 {
+  height: 100%;
+  background-color: blue;
+  border-radius: 5px;
+  animation: decreaseWidth 3s linear forwards; /* CSS animation to decrease width over 10 seconds */
+}
+.bar-fill3 {
+  height: 100%;
+  background-color: purple;
+  border-radius: 5px;
+  animation: decreaseWidth 10s linear forwards; /* CSS animation to decrease width over 10 seconds */
+}
 
-@import url('https://');
-#status1 {
-    width: 100%;
-    background-color: #ddd;
+@keyframes decreaseWidth {
+  from {
+    width: 100%; /* Start with full width */
   }
- 
-  #status1{
-    width: 80%;
-    background-color: #ddd;
+  to {
+    width: 0%; /* End with 0 width */
   }
-  #statusBar1 {
-  width: 10%;
-  height: 30px;
-  background-color: #04AA6D;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-  }  
+}
