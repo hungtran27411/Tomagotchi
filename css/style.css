@@ -1,51 +1,87 @@
-.prog-container {
-  margin-bottom: 20px;
-}
-.prog-bar1 {
-  width: 100%;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 20px;
-}
-.prog-bar2 {
-  width: 100%;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 20px;
-}
-.prog-bar3 {
-  width: 100%;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 20px;
-}
-.bar-fill1 {
-  height: 100%;
-  background-color: #4caf50;
-  border-radius: 5px;
-  animation: decreaseWidth 10s linear forwards; /* CSS animation to decrease width over 10 seconds */
-}
-.bar-fill2 {
-  height: 100%;
-  background-color: blue;
-  border-radius: 5px;
-  animation: decreaseWidth 3s linear forwards; /* CSS animation to decrease width over 10 seconds */
-}
-.bar-fill3 {
-  height: 100%;
-  background-color: purple;
-  border-radius: 5px;
-  animation: decreaseWidth 10s linear forwards; /* CSS animation to decrease width over 10 seconds */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#pet {
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+#pet-image {
+  width: 100px;
+  height: 100px;
+  background-image: url('android.png'); /* Adjust the path to your image */
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+#status {
+  text-align: left;
+}
+
+#health-bar {
+  width: 100%;
+  height: 45px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+}
+
+#health-bar-label {
+  position: absolute; 
+  top: 0; 
+  left: 50; /* Align the label to the left */
+  width: 100%; /* Ensure the label spans the full width */
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+#health-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+  width: 100%;
+  animation: decreaseWidth 10s linear forwards; /* Added for smooth animation */
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
 @keyframes decreaseWidth {
   from {
-    width: 100%; /* Start with full width */
+    width: 100%;
   }
   to {
-    width: 0%; /* End with 0 width */
+    width: 0%;
   }
 }

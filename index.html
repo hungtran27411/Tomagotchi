@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="js/app.js"></script>
-<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamagotchi</title>
+<script defer src="js/app.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
- <img src="img/android.png" alt="">
-<div class="prog-container">
+
+<div id="container">
+  <div id="pet">
+    <div id="pet-image"></div>
+    <div id="status">
+      <p><strong>Name:</strong> <span id="name">Pet</span></p>
+      <p><strong>Hunger:</strong> <span id="hunger">50</span></p>
+      <p><strong>Happiness:</strong> <span id="happiness">50</span></p>
+      <p><strong>Energy:</strong> <span id="energy">50</span></p>
+      <div id="health-bar">
+        <div id="health-bar-label">Tomo's Health:</div>
+        <div id="health-bar-fill"></div>
+      </div>
+    </div>
+  </div>
   
-  <div class="progress-label">Feed Me!</div>
-  <div class="prog-bar1">
-    <div class="bar-fill1" id="progressBar" style="width: 0%;"></div>
+  <div id="buttons">
+    <button id="Feed-Button">Feed-Button</button>
+    <button id="Play-Button">Play-Button</button>
+    <button id="Rest-Button">Rest-Button</button>
   </div>
 </div>
 
-<div class="prog-container">
-  <div class="progress-label">Exercise Me!</div>
-  <div class="prog-bar2">
-    <div class="bar-fill2"></div>
-  </div>
-</div>
 
-<div class="prog-container">
-  <div class="progress-label">nap plzzz</div>
-  <div class="prog-bar3">
-    <div class="bar-fill3"></div>
-  </div>
-</div>
-
-<button id="startButton">start game</button>
-<button id="stopButton">stop game</button>
-<button id="startButton">food</button>
-<button id="stopButton">play</button>
-<button id="startButton">rest</button>
-
-  
 </body>
 </html>
-
