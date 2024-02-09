@@ -10,18 +10,18 @@ body {
   height: 100vh;
 }
 
-#pet {
+#toma {
   border: 2px solid #333;
-  border-radius: 10px;
+  border-radius: 14px;
   background-color: #f0f0f0;
-  padding: 20px;
-  margin-right: 20px;
+  padding: 24px;
+  margin-right: 24px;
 }
 
-#pet-image {
+#tomaPic {
   width: 100px;
   height: 100px;
-  background-image: url('android.png'); /* Adjust the path to your image */
+  background-image: url('android.png'); 
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -32,7 +32,7 @@ body {
   text-align: left;
 }
 
-#health-bar {
+#pBar {
   width: 100%;
   height: 45px;
   background-color: #ddd;
@@ -42,20 +42,20 @@ body {
   position: relative;
 }
 
-#health-bar-label {
+#pBarLabel {
   position: absolute; 
   top: 0; 
-  left: 50; /* Align the label to the left */
-  width: 100%; /* Ensure the label spans the full width */
+  left: 50; 
+  width: 100%; 
   text-align: center;
   padding: 5px;
   font-weight: bold;
 }
-#health-bar-fill {
-  height: 100%;
+#pBarFill {
+  height: calc(100% - 20px);
   background-color: #4caf50;
   width: 100%;
-  animation: decreaseWidth 10s linear forwards; /* Added for smooth animation */
+  animation: decreaseWidth 10s linear forwards; 
 }
 
 #buttons {
